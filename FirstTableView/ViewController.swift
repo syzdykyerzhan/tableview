@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     let myTableView : UITableView = {
         let mytableView = UITableView()
-        mytableView.backgroundColor = .systemCyan
+        mytableView.backgroundColor = .systemGray
         mytableView.register(MyTableViewCell.self, forCellReuseIdentifier: MyTableViewCell.IDENTIFIER)
         
         return mytableView
@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .systemCyan
+        view.backgroundColor = .systemMint
         
         myTableView.dataSource = self
         myTableView.delegate = self
@@ -49,9 +49,9 @@ extension ViewController: UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: MyTableViewCell.IDENTIFIER, for: indexPath) as! MyTableViewCell
         cell.setInformation(name: "\(indexPath.row + 1).\(product)", price: price, imageName: product)
         
-        cell.backgroundColor = .systemCyan
-        cell.layer.borderWidth = 5
-        cell.layer.borderColor = CGColor(red: 1, green: 1, blue: 1, alpha: 0.5)
+        //cell.backgroundColor = .systemGray4
+        cell.layer.borderWidth = 1
+        cell.layer.borderColor = CGColor(red: 0, green: 0, blue: 0, alpha: 0.5)
         return cell
     }
     

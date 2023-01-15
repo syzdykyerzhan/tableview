@@ -14,13 +14,13 @@ class MyTableViewCell: UITableViewCell {
     
     private lazy var myView : UIView = {
         let myView = UIView()
-        myView.backgroundColor = .systemCyan
+        myView.backgroundColor = .systemGray
         return myView
     }()
     
     private lazy var myText : UILabel = {
         let myLabel = UILabel()
-        myLabel.backgroundColor = .systemCyan
+        myLabel.backgroundColor = .systemGray
         myLabel.font = UIFont.boldSystemFont(ofSize: 30)
         myLabel.textColor = UIColor.black
         myLabel.textAlignment = .center
@@ -29,7 +29,7 @@ class MyTableViewCell: UITableViewCell {
     
     private lazy var priceOfProduct : UILabel = {
         let myLabel = UILabel()
-        myLabel.backgroundColor = .systemCyan
+        myLabel.backgroundColor = .systemGray
         myLabel.textAlignment = .center
         myLabel.font = UIFont.systemFont(ofSize: 25)
         myLabel.textColor = UIColor.systemYellow
@@ -38,8 +38,7 @@ class MyTableViewCell: UITableViewCell {
     
     private lazy var myImageView : UIImageView = {
         let imageView = UIImageView()
-        imageView.backgroundColor = .systemCyan
-        //imageView.image = UIImage(named: <#T##String#>)
+        imageView.backgroundColor = .systemGray
         return imageView
     }()
     
